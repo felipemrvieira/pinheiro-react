@@ -1,0 +1,57 @@
+@import "./variaveis";
+
+@media only screen and (min-width: 601px) {
+
+    #telefones-uteis{
+        // @include magin-top-bottom();
+        @include posicao-relativa(-70px);
+        .card{
+            .card-header{
+                font-size: 20px;
+                color: #32394d;
+                font-family: "myriad-bold";
+                margin: 0;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .card-body{
+                color: rgb(95,95,95);
+            }
+        }
+        p{
+            text-align: center;
+            margin: 0;
+        }
+       
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #telefones-uteis{
+        // @include magin-top-bottom();
+        @include posicao-relativa(-80px);
+        .card{
+            .card-header{
+                font-size: 20px;
+                color: #32394d;
+                font-family: "myriad-bold";
+                margin: 0;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .card-body{
+                color: rgb(95,95,95);
+            }
+        }
+        p{
+            text-align: center;
+            margin: 0;
+        }
+       
+
+    }
+}
