@@ -1,5 +1,4 @@
-// $branco-cinza: #fbfbfb;
-$branco-cinza: #f6f6f6;
+$branco-cinza: '#f6f6f6';
 $azul-escuro: #32394d;
 $vermelho-claro:  rgb(255, 203, 207);
 $vermelho:  rgb(162, 18, 31);
@@ -8,49 +7,49 @@ $card-radius: 4px;
 @font-face {
   font-family: "opensans-bold";
   font-display: auto;
-  src: url("./components/template/fonts/opensans-bold-webfont.ttf");
+  src: url("./fonts/opensans-bold-webfont.ttf");
 }
 
 @font-face {
   font-family: "opensans-light";
   font-display: auto;
-  src: url("./components/template/fonts/opensans-light-webfont.ttf");
+  src: url("./fonts/opensans-light-webfont.ttf");
 }
 
 @font-face {
   font-family: "open sans";
   font-display: auto;
-  src: url("./components/template/fonts/opensans.woff2");
+  src: url("./fonts/opensans.woff2");
 }
 
 @font-face {
   font-family: 'gothan';
   font-display: auto;
-  src: url('./components/template/fonts/Gotham-Font/Gotham-Light.otf');
+  src: url('./fonts/Gotham-Font/Gotham-Light.otf');
 }
 
 @font-face {
   font-family: "gothan-ultra";
   font-display: auto;
-  src: url("./components/template/fonts/Gotham-Font/Gotham-Ultra.otf");
+  src: url("./fonts/Gotham-Font/Gotham-Ultra.otf");
 }
 
 @font-face {
   font-family: "myriad-bold";
   font-display: auto;
-  src: url("./components/template/fonts/Myriad/MYRIADPRO-BOLD.woff");
+  src: url("./fonts/Myriad/MYRIADPRO-BOLD.woff");
 }
 
 @font-face {
   font-family: "myriad-regular";
   font-display: auto;
-  src: url("./components/template/fonts/Myriad/MYRIADPRO-REGULAR.woff");
+  src: url("./fonts/Myriad/MYRIADPRO-REGULAR.woff");
 }
 
 @font-face {
   font-family: "myriad-semibold";
   font-display: auto;
-  src: url("./components/template/fonts/Myriad/MYRIADPRO-SEMIBOLD.woff");
+  src: url("./fonts/Myriad/MYRIADPRO-SEMIBOLD.woff");
 }
 
 
