@@ -18,10 +18,10 @@ class Main extends Component {
             <BannerContingencia/>
             <section id="mapa-noticias" className="container">
               <div className="row">
-                <div class="col-lg-6">
+                <div className="col-lg-6">
                   <MapaInstabilidade />
                 </div>
-                <div class="col-lg-6">
+                <div className="col-lg-6">
                   <Noticias />
                 </div>
               </div>
