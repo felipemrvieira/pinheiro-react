@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import Main from './template/Main/Main';
 
 
-class Index extends Component {
+class PlanoContingencia extends Component {
   render() {
     return (
-        <Main />  
+       <h1>Dúvidas Frequentes</h1>  
     );
   }
 }
 
-export default Index;
+export default PlanoContingencia;

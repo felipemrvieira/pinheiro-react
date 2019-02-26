@@ -1,5 +1,6 @@
 import './Nav.scss'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default props => (
     <nav className="navbar navbar-expand-lg navbar-light" id="nav-principal">
@@ -14,13 +15,13 @@ export default props => (
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
-                    <a className="nav-link" href="/">Início</a>
+                    <Link className="nav-link" to="/">Início</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="plano-de-contingencia.html">Plano de Contingência</a>
+                    <Link className="nav-link" to="/plano-de-contingencia">Plano de Contingência</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="perguntas-e-respostas.html">Dúvidas Frequentes</a>
+                    <Link className="nav-link" to="/duvidas-frequentes">Dúvidas Frequentes</Link>
                 </li>
             </ul>
             <div id="nav-social">

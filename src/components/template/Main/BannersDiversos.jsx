@@ -1,8 +1,8 @@
 import React from 'react'
 import './BannersDiversos.scss';
 
-import aplicativo from './images/aplicativo.png';
-import duvidas from './images/duvidas.png';
+import aplicativo from '../images/aplicativo.png';
+import duvidas from '../images/duvidas.png';
 
 
 export default props => {

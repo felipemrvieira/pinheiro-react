@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './BannerContingencia.scss';
-import banner from './images/plano-contingencia.png';
-import bannerMobile from './images/plano-contingencia-mobile.jpg';
+import banner from '../images/plano-contingencia.png';
+import bannerMobile from '../images/plano-contingencia-mobile.jpg';
 
 
 class BannerContingencia extends Component {
