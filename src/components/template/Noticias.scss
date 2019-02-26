@@ -12,6 +12,7 @@
             // @include magin-top-bottom();
             .card-body{
                 padding-top: 0;
+                padding-bottom: 5px;
             }
             .noticias-container{
                 #link-noticias{
@@ -21,7 +22,7 @@
                         overflow: hidden;
                     }
                 }
-                height: 450px;
+                height: 520px;
                 overflow-y: scroll;
                 width: 100%;
                 max-width: 100%;

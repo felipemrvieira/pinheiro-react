@@ -6,6 +6,8 @@ import TelefonesUteis from './TelefonesUteis';
 import BannerContingencia from './BannerContingencia';
 import MapaInstabilidade from './MapaInstabilidade';
 import Noticias from './Noticias';
+import AreasAtingidas from './AreasAtingidas';
+import BannersDiversos from './BannersDiversos';
 
 
 class Main extends Component {
@@ -26,6 +28,8 @@ class Main extends Component {
                 </div>
               </div>
             </section>
+            <AreasAtingidas />
+            <BannersDiversos />
         </main>
     );
   }
