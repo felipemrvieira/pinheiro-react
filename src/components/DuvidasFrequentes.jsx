@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 
-import Main from './template/Main/Main';
+import Duvidas from './template/DuvidasFrequentes/Index';
+import BannerPrincipal from './template/BannerPrincipal';
+import OrgaosDefesa from './template/OrgaosDefesa';
 
 
-class PlanoContingencia extends Component {
+class DuvidasFrequentes extends Component {
   render() {
     return (
-       <h1>Dúvidas Frequentes</h1>  
+      <div>
+        <BannerPrincipal />
+        <OrgaosDefesa />
+        <Duvidas />  
+      </div>
     );
   }
 }
 
-export default PlanoContingencia;
+export default DuvidasFrequentes;

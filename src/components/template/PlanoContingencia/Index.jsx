@@ -5,25 +5,25 @@ import evacuacao from '../images/mapa-evacuacao.jpg';
 export default props => {
    
     return (
-        <section id="plano-contingencia" class="container">
-        <div class="row">
+        <section id="plano-contingencia" className="container">
+        <div className="row">
   
-          <div id="cabecalho-modulo" class="col-md-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="titulo-modulo">
+          <div id="cabecalho-modulo" className="col-md-12">
+            <div className="card">
+              <div className="card-header">
+                <h3 className="titulo-modulo">
                   Plano de Contingência de Proteção e de Defesa Civil do Pinheiro
                 </h3>
               </div>
             </div>
           </div>
   
-          <div class="col-md-12">
-            <div class="card submodulo">
+          <div className="col-md-12">
+            <div className="card submodulo">
   
-              <div class="card-body">
-                <div class="descricao-plano">
-                  <div class="resposta">
+              <div className="card-body">
+                <div className="descricao-plano">
+                  <div className="resposta">
                     <p>
                       O <b>Plano de Contingência</b> <a
                         href="http://www.maceio.al.gov.br/wp-content/uploads/2019/01/pdf/2019/01/PLANO-DE-CONTING%C3%8ANCIA-1.pdf"
