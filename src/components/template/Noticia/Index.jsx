@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import './Noticias.scss';
+import './Noticia.scss';
 import Noticia from './Noticia';
 
 const URL = 'http://api.itec.al.gov.br/api/v1/noticias'
 
 class Noticias extends Component {
+    
     constructor(props) {
         super(props)
         this.state = { list: [] }
         this.refresh()
+    }
+
+    componentDidMount () {
+        const id = this.props.match.params.id
+
+    
     }
     
     refresh() {
