@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 
-import Main from './template/Main/Main';
+import Plano from './template/PlanoContingencia/Index';
+import BannerPrincipal from './template/BannerPrincipal';
+import OrgaosDefesa from './template/OrgaosDefesa';
 
 
 class PlanoContingencia extends Component {
   render() {
     return (
-       <h1>Plano de contingencia</h1>  
+      <div>
+        <BannerPrincipal />
+        <OrgaosDefesa />
+        <Plano />  
+      </div>
     );
   }
 }

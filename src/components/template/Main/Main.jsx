@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import BannerPrincipal from './BannerPrincipal';
-import OrgaosDefesa from './OrgaosDefesa';
 import TelefonesUteis from './TelefonesUteis';
 import BannerContingencia from './BannerContingencia';
 import MapaInstabilidade from './MapaInstabilidade';
@@ -9,6 +7,8 @@ import Noticias from './Noticias';
 import AreasAtingidas from './AreasAtingidas';
 import BannersDiversos from './BannersDiversos';
 import AtuacaoIntegrada from './AtuacaoIntegrada';
+import BannerPrincipal from './BannerPrincipal';
+import OrgaosDefesa from './OrgaosDefesa';
 
 
 class Main extends Component {
