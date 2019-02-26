@@ -1,0 +1,94 @@
+@import "./variaveis";
+footer{
+    background-color: $vermelho;
+    color: white;
+    padding: 20px 0;
+    .container{
+        .row{
+            .orgao{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 28px;
+                .orgao-logo{
+                    display: inline-block;
+                    background: url(./images/sprites-logos.png) no-repeat;
+                    background-position: 2% 2%;
+                    // background-size : 700%;
+                    width: 52px;
+                    height: 52px;
+                    margin-right: 12px;
+                }
+                .orgao-info{
+                    display: inline-block;
+                    .orgao-sigla{
+                        font-family: "opensans-bold";
+                        font-size: 22px;
+                        margin: 0;
+                    }
+                    .orgao-nome{
+                        margin: 0;
+                        font-family: "open sans";
+                        font-size: 14px;
+                        line-height: 14px;
+                        letter-spacing: 0.5px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .copyright{
+                font-family: "open sans";
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .itec-logo{
+                    background: url(./images/sprites-logos.png) no-repeat;
+                    background-position: 24% 2%;
+                    // background-size : 700%;
+                    width: 95px;
+                    height: 45px;
+                    margin-right: 8px;
+                }
+                p{
+                    margin: 0;
+                    font-family: "open sans";
+                    font-size: 12.8px;
+                }
+            }
+            .phone{
+                font-size: 22px;
+                font-family: "opensans-bold";                    
+            }
+            address{
+                p{
+                    font-size: 14px;
+                    font-family: "open sans";
+                    margin: 0;
+                }
+            }
+            .footer-menu{
+                ul{
+                    border-left: 1px solid #c52a3c;
+                    padding-left: 15px;
+                    li{
+                       
+                        list-style-type: none;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            font-size: 13px;
+                            font-family: "open sans";
+                            margin: 0;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

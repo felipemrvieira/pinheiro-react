@@ -1,0 +1,43 @@
+@import "./variaveis";
+
+@media only screen and (min-width: 900px) {
+
+    #banners-diversos{
+        @include magin-top-bottom();
+        .linha-banners{
+            align-items: flex-end;
+            @include posicao-relativa(-50px);
+        }
+       img{
+           width: 100%;
+           max-width: 100%;
+           overflow: hidden;
+       }
+       #banner1{
+
+       }
+       #banner2{
+
+       }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #banners-diversos{
+        .linha-banners{
+            align-items: flex-end;
+            @include posicao-relativa(-70px);
+        }
+        img{
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        #banner1{
+            // @include posicao-relativa();
+        }
+       #banner2{
+            // @include posicao-relativa();
+       }
+    }
+}

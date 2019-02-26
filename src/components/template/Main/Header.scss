@@ -1,0 +1,191 @@
+@import "./variaveis";
+@media only screen and (min-width: 900px) {
+    
+    .container{
+        max-width: 1000px;       
+        display: flex;
+        flex-direction: row;
+    }
+
+    header{
+        background: url(./images/header_bg.png);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .header-container{
+            color: white;
+            justify-content: space-between;
+            .titulo{
+                text-transform: uppercase;
+                align-self: center;
+            }
+            .orgao{
+                align-self: center;
+                .orgao-titulo{
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-size: 30px;
+                    font-family: "gothan";
+                }
+                .orgao-descricao{
+                    margin: 0;
+                    font-size: 13.5px;
+                    font-weight: 300;
+                    line-height: 105%;
+                    font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                }
+            }
+            .busca{
+                align-self: center;
+                #busca-principal{
+                    width: 200px;
+                    background: #F8F7F7 url(./images/sprites-geral.png) no-repeat;
+                    background-position: 90% 50%;
+                    border: none;
+                    padding: 4px 40px 4px 10px;
+                    height: 32px;
+                    border-radius: 0;
+                    font-size: 0.8em;
+                    font-weight: normal;
+                    letter-spacing: 0.8px;
+                    color: #5f5f5f;
+                    font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    
+    .container{
+        max-width: 1000px;       
+        display: flex;
+        flex-direction: row;
+    }
+
+    header{
+        background: url(./images/header_bg.png);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .header-container{
+            color: white;
+            justify-content: space-between;
+            .titulo{
+                text-transform: uppercase;
+                align-self: center;
+            }
+            .orgao{
+                align-self: center;
+                padding: 0 15px;
+                .orgao-titulo{
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-size: 20px;
+                    font-family: "gothan";
+                }
+                .orgao-descricao{
+                    margin: 0;
+                    font-size: 13.5px;
+                    font-weight: 300;
+                    line-height: 105%;
+                    font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                }
+            }
+            .busca{
+                align-self: center;
+                #busca-principal{
+                    width: 150px;
+                    background: #F8F7F7 url(./images/sprites-geral.png) no-repeat;
+                    background-position: 90% 50%;
+                    border: none;
+                    padding: 4px 35px 4px 10px;
+                    height: 32px;
+                    border-radius: 0;
+                    font-size: 0.8em;
+                    font-weight: normal;
+                    letter-spacing: 0.8px;
+                    color: #5f5f5f;
+                    font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+// Tela pequena
+@media only screen and (max-width: 600px) {
+    
+    .container{
+        max-width: 1000px;       
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        background: url(./images/header_bg.png);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .header-container{
+            color: white;
+            justify-content: space-between;
+            .titulo{
+                text-transform: uppercase;
+                align-self: center;
+                margin-bottom: 10px;
+            }
+            .orgao{
+                align-self: center;
+                padding: 0 15px;
+                .orgao-titulo{
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-size: 24px;
+                    font-family: "gothan";
+                    text-align: center;
+                }
+                .orgao-descricao{
+                    margin: 0;
+                    font-size: 11.5px;
+                    font-weight: 300;
+                    line-height: 105%;
+                    font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                    text-align: center;
+                }
+            }
+            .busca{
+                align-self: center;
+                display: none;
+                #busca-principal{
+                    width: 150px;
+                    background: #F8F7F7 url(./images/sprites-geral.png) no-repeat;
+                    background-position: 90% 50%;
+                    border: none;
+                    padding: 4px 35px 4px 10px;
+                    height: 32px;
+                    border-radius: 0;
+                    font-size: 0.8em;
+                    font-weight: normal;
+                    letter-spacing: 0.8px;
+                    color: #5f5f5f;
+                    font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+        }
+    }
+}

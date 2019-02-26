@@ -1,0 +1,166 @@
+$branco-cinza: #f6f6f6;
+$azul-escuro: #32394d;
+$vermelho-claro:  rgb(255, 203, 207);
+$vermelho:  rgb(162, 18, 31);
+$card-radius: 4px;
+
+@font-face {
+  font-family: "opensans-bold";
+  font-display: auto;
+  src: url("./fonts/opensans-bold-webfont.ttf");
+}
+
+@font-face {
+  font-family: "opensans-light";
+  font-display: auto;
+  src: url("./fonts/opensans-light-webfont.ttf");
+}
+
+@font-face {
+  font-family: "open sans";
+  font-display: auto;
+  src: url("./fonts/opensans.woff2");
+}
+
+@font-face {
+  font-family: 'gothan';
+  font-display: auto;
+  src: url('./fonts/Gotham-Font/Gotham-Light.otf');
+}
+
+@font-face {
+  font-family: "gothan-ultra";
+  font-display: auto;
+  src: url("./fonts/Gotham-Font/Gotham-Ultra.otf");
+}
+
+@font-face {
+  font-family: "myriad-bold";
+  font-display: auto;
+  src: url("./fonts/Myriad/MYRIADPRO-BOLD.woff");
+}
+
+@font-face {
+  font-family: "myriad-regular";
+  font-display: auto;
+  src: url("./fonts/Myriad/MYRIADPRO-REGULAR.woff");
+}
+
+@font-face {
+  font-family: "myriad-semibold";
+  font-display: auto;
+  src: url("./fonts/Myriad/MYRIADPRO-SEMIBOLD.woff");
+}
+
+
+@mixin magin-top-bottom($top: 16px, $bottom: 32px){
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin titulo-modulo(){
+  .titulo-modulo{
+    font-size: 25px;
+    color: $azul-escuro;
+    font-family: "myriad-bold";
+    margin: 0;
+  }
+}
+
+@mixin descricao-modulo(){
+  .descricao-modulo{
+    font-family: "myriad-regular";
+    color: #7a7c81;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+@mixin posicao-relativa($top: -60px){
+  position: relative;
+  top: $top;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: $branco-cinza;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: $vermelho-claro;
+}
+
+::selection {
+  background: $vermelho-claro;
+}
+
+.row{
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container{
+  // max-width: 1100px !important;
+}
+
+a{
+  color: $azul-escuro;
+  font-family: "myriad-bold";
+}
+
+.card{
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  .card-header{
+    background-color: #fff;
+    border: none;
+    border-top-left-radius: $card-radius;
+    border-top-right-radius: $card-radius;
+  }
+  .card-footer{
+    background-color: #fff;
+    border: none;
+    border-bottom-left-radius: $card-radius;
+    border-bottom-right-radius: $card-radius;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #32394d;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #44506f;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #44506f;
+}
+::-webkit-scrollbar-track {
+  background: #ececec;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #ececec;
+}
+::-webkit-scrollbar-track:active {
+  background: #ececec;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
