@@ -8,6 +8,7 @@ import MapaInstabilidade from './MapaInstabilidade';
 import Noticias from './Noticias';
 import AreasAtingidas from './AreasAtingidas';
 import BannersDiversos from './BannersDiversos';
+import AtuacaoIntegrada from './AtuacaoIntegrada';
 
 
 class Main extends Component {
@@ -30,6 +31,7 @@ class Main extends Component {
             </section>
             <AreasAtingidas />
             <BannersDiversos />
+            <AtuacaoIntegrada />
         </main>
     );
   }
