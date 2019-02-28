@@ -15,33 +15,61 @@
 
         #cabecalho-modulo{
             margin-bottom: 8px;
-        }
-
-        .submodulo{
-            border-radius: $card-radius;
-       
-        
-            .card-body{
-                margin: 0 64px;
-                .descricao-plano{
-                    
-                    .resposta{
+            
+            .card{
+                border-radius: 4px;
+                padding: 0 18px;
+                .card-header{
+                    text-align: left;
+                    margin-top: 12px;
+                    .chapeu{
+                        text-align: left;
                         font-family: "myriad-regular";
+                        color: #7a7c81;
+                        font-size: 12px;
+                        line-height: 12px;
+                        margin: 0;
+                        text-transform: uppercase;
+                    }
+                    .titulo{
+                        text-align: left;
+                        font-family: "myriad-regular";
+                        font-size: 26px;
+                        margin: 4px 0 0 0;
+                    }
+                    .intro{
+                        font-family: "myriad-regular";
+                        color: #757679;
+                        font-size: 16px;
+                        margin: 8px 0 0 0;
+                        overflow: hidden;
+                        position: relative;
+                        line-height: 1.2em;
+                        max-height: 2.3em;
                         text-align: justify;
-                        color: #8c8c8c;
-                        font-size: 15px;
+                        padding-right: 10px;
                     }
                 }
-                
             }
-            #mapa-container{
-                img{
-                    width: 100%;
-                    max-width: 100%;
-                    overflow: hidden;
+            .card-body{
+                padding-top: 0;
+                .noticia-container{
+                    .noticia{
+                        display: flex;
+                        flex-direction: column;
+                        .noticia-capa{
+                            width: 100%;
+                            margin-bottom: 18px;
+                        }
+                        .noticia-texto{
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
+
+    
     }
 }
 
@@ -61,33 +89,62 @@
 
         #cabecalho-modulo{
             margin-bottom: 8px;
-        }
-
-        .submodulo{
-            border-radius: $card-radius;
-       
-        
-            .card-body{
-                margin: 0 12px;
-                .descricao-plano{
-                    
-                    .resposta{
+            
+            .card{
+                border-radius: 4px;
+                padding: 0 18px;
+                .card-header{
+                    text-align: left;
+                    margin-top: 12px;
+                    .chapeu{
+                        text-align: left;
                         font-family: "myriad-regular";
+                        color: #7a7c81;
+                        font-size: 12px;
+                        line-height: 12px;
+                        margin: 0;
+                        text-transform: uppercase;
+                    }
+                    .titulo{
+                        text-align: left;
+                        font-family: "myriad-regular";
+                        font-size: 26px;
+                        margin: 4px 0 0 0;
+                    }
+                    .intro{
+                        font-family: "myriad-regular";
+                        color: #757679;
+                        font-size: 16px;
+                        margin: 8px 0 0 0;
+                        overflow: hidden;
+                        position: relative;
+                        line-height: 1.2em;
+                        max-height: 2.3em;
                         text-align: justify;
-                        color: #8c8c8c;
-                        font-size: 15px;
+                        padding-right: 10px;
                     }
                 }
-                
             }
-            #mapa-container{
-                img{
-                    width: 100%;
-                    max-width: 100%;
-                    overflow: hidden;
+            .card-body{
+                padding-top: 0;
+                .noticia-container{
+                    .noticia{
+                        display: flex;
+                        flex-direction: column;
+                        .noticia-capa{
+                            width: 100%;
+                            margin-bottom: 18px;
+                        }
+                        .noticia-texto{
+                            width: 100%;
+
+                        }
+                    }
                 }
             }
         }
+
+    
     }
 }
 
@@ -95,5 +152,74 @@
 // Tela pequena
 @media only screen and (max-width: 600px) {
     
-   
+    #plano-contingencia{
+        @include titulo-modulo();
+        h3{
+            text-align: center;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: -60px;
+
+        #cabecalho-modulo{
+            margin-bottom: 8px;
+            
+            .card{
+                border-radius: 4px;
+                padding: 0 18px;
+                .card-header{
+                    text-align: left;
+                    margin-top: 12px;
+                    .chapeu{
+                        text-align: left;
+                        font-family: "myriad-regular";
+                        color: #7a7c81;
+                        font-size: 12px;
+                        line-height: 12px;
+                        margin: 0;
+                        text-transform: uppercase;
+                    }
+                    .titulo{
+                        text-align: left;
+                        font-family: "myriad-regular";
+                        font-size: 26px;
+                        margin: 4px 0 0 0;
+                    }
+                    .intro{
+                        font-family: "myriad-regular";
+                        color: #757679;
+                        font-size: 16px;
+                        margin: 8px 0 0 0;
+                        overflow: hidden;
+                        position: relative;
+                        line-height: 1.2em;
+                        max-height: 2.3em;
+                        text-align: justify;
+                        padding-right: 10px;
+                    }
+                }
+            }
+            .card-body{
+                padding-top: 0;
+                .noticia-container{
+                    .noticia{
+                        display: flex;
+                        flex-direction: column;
+                        .noticia-capa{
+                            width: 100%;
+                            margin-bottom: 18px;
+                        }
+                        .noticia-texto{
+                            width: 100%;
+
+                        }
+                    }
+                }
+            }
+        }
+
+    
+    }
 }

@@ -16,12 +16,16 @@ export default props => (
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
                     <Link className="nav-link" to="/">Início</Link>
+                    {/* <a className="nav-link" href="/">Início</a> */}
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/plano-de-contingencia">Plano de Contingência</Link>
+                    {/* <a className="nav-link" href="/plano-de-contingencia">Plano de Contingência</a> */}
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/duvidas-frequentes">Dúvidas Frequentes</Link>
+                    {/* <a className="nav-link" href="/duvidas-frequentes">Dúvidas Frequentes</a> */}
+
                 </li>
             </ul>
             <div id="nav-social">

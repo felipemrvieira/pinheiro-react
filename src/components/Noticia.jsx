@@ -11,7 +11,7 @@ class CompNoticia extends Component {
       <div>
         <BannerPrincipal />
         <OrgaosDefesa />
-        <Noticia />  
+        <Noticia id={this.props.id} />  
       </div>
     );
   }
