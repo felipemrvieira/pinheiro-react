@@ -1,6 +1,5 @@
 import React from 'react'
 import './PlanoContingencia.scss';
-import evacuacao from '../images/mapa-evacuacao.jpg';
 import { Markup } from 'interweave';
 
 
