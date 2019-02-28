@@ -1,6 +1,7 @@
 import React from 'react'
 import './AreasAtingidas.scss';
 
+
 export default props => {
     
     return (

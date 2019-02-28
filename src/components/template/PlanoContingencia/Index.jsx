@@ -2,6 +2,7 @@ import React from 'react'
 import './PlanoContingencia.scss';
 import evacuacao from '../images/mapa-evacuacao.jpg';
 
+
 export default props => {
    
     return (
@@ -12,7 +13,7 @@ export default props => {
             <div className="card">
               <div className="card-header">
                 <h3 className="titulo-modulo">
-                  Plano de Contingência de Proteção e de Defesa Civil do Pinheiro
+                { props.plano.titulo }
                 </h3>
               </div>
             </div>

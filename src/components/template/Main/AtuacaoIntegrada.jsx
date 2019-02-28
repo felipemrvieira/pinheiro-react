@@ -1,5 +1,8 @@
 import React from 'react'
 import './AtuacaoIntegrada.scss';
+import axios from 'axios';
+
+const URL = 'http://api.itec.al.gov.br/api/v1/plano'
 
 export default props => {
     
