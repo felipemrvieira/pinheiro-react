@@ -10,15 +10,15 @@ const URL = 'http://api.itec.al.gov.br/api/v1/plano'
 class PlanoContingencia extends Component {
   constructor(props) {
     super(props)
-    this.state = { plano: [] }
+    this.state = { plano: {} }
     this.refresh()
   }
 
   refresh() {
   axios.get(`${URL}`)
       .then(resp => {
-      this.setState({ ...this.state, plano: resp.data })
-      console.log(this.state)
+      this.setState({ ...this.state, plano: resp.data[0] })
+      // console.log(this.state.plano)
       })
       .catch( err => console.log(err) )
   }

@@ -22,7 +22,6 @@ class Noticias extends Component {
 
             })
             .catch( err => console.log(err) )
-            console.log(this.state.list)
     }
 
     render() {
