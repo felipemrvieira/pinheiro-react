@@ -25,7 +25,7 @@ class DuvidasFrequentes extends Component {
   render() {
     return (
       <div>
-        <BannerPrincipal />
+        <BannerPrincipal banner={this.props.banner} />
         <OrgaosDefesa />
         <Duvidas duvidas={this.state.duvidas} />  
       </div>
