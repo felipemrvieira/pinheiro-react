@@ -4,53 +4,53 @@ $vermelho-claro:  rgb(255, 203, 207);
 $vermelho:  rgb(162, 18, 31);
 $card-radius: 4px;
 
-@font-face {
-  font-family: "opensans-bold";
-  font-display: auto;
-  src: url("../fonts/opensans-bold-webfont.ttf");
-}
+// @font-face {
+//   font-family: "opensans-bold";
+//   font-display: auto;
+//   src: url("../fonts/opensans-bold-webfont.ttf");
+// }
 
-@font-face {
-  font-family: "opensans-light";
-  font-display: auto;
-  src: url("../fonts/opensans-light-webfont.ttf");
-}
+// @font-face {
+//   font-family: "opensans-light";
+//   font-display: auto;
+//   src: url("../fonts/opensans-light-webfont.ttf");
+// }
 
-@font-face {
-  font-family: "open sans";
-  font-display: auto;
-  src: url("../fonts/opensans.woff2");
-}
+// @font-face {
+//   font-family: "open sans";
+//   font-display: auto;
+//   src: url("../fonts/opensans.woff2");
+// }
 
-@font-face {
-  font-family: 'gothan';
-  font-display: auto;
-  src: url('../fonts/Gotham-Font/Gotham-Light.otf');
-}
+// @font-face {
+//   font-family: 'gothan';
+//   font-display: auto;
+//   src: url('../fonts/Gotham-Font/Gotham-Light.otf');
+// }
 
-@font-face {
-  font-family: "gothan-ultra";
-  font-display: auto;
-  src: url("../fonts/Gotham-Font/Gotham-Ultra.otf");
-}
+// @font-face {
+//   font-family: "gothan-ultra";
+//   font-display: auto;
+//   src: url("../fonts/Gotham-Font/Gotham-Ultra.otf");
+// }
 
-@font-face {
-  font-family: "myriad-bold";
-  font-display: auto;
-  src: url("../fonts/Myriad/MYRIADPRO-BOLD.woff");
-}
+// @font-face {
+//   font-family: "myriad-bold";
+//   font-display: auto;
+//   src: url("../fonts/Myriad/MYRIADPRO-BOLD.woff");
+// }
 
-@font-face {
-  font-family: "myriad-regular";
-  font-display: auto;
-  src: url("../fonts/Myriad/MYRIADPRO-REGULAR.woff");
-}
+// @font-face {
+//   font-family: "myriad-regular";
+//   font-display: auto;
+//   src: url("../fonts/Myriad/MYRIADPRO-REGULAR.woff");
+// }
 
-@font-face {
-  font-family: "myriad-semibold";
-  font-display: auto;
-  src: url("../fonts/Myriad/MYRIADPRO-SEMIBOLD.woff");
-}
+// @font-face {
+//   font-family: "myriad-semibold";
+//   font-display: auto;
+//   src: url("../fonts/Myriad/MYRIADPRO-SEMIBOLD.woff");
+// }
 
 
 @mixin magin-top-bottom($top: 16px, $bottom: 32px){

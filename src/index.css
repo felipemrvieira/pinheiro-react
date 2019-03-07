@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "opensans-bold";
+    font-display: auto;
+    src: url("./components/template/fonts/opensans-bold-webfont.ttf");
+  }
+  
+  @font-face {
+    font-family: "opensans-light";
+    font-display: auto;
+    src: url("./components/template/fonts/opensans-light-webfont.ttf");
+  }
+  
+  @font-face {
+    font-family: "open sans";
+    font-display: auto;
+    src: url("./components/template/fonts/opensans.woff2");
+  }
+  
+  @font-face {
+    font-family: 'gothan';
+    src: local('gothan'), url('./components/template/fonts/Gotham-Font/Gotham-Light.otf');
+  }
+  
+  @font-face {
+    font-family: "gothan-ultra";
+    src: local('gothan-ultra'), url("./components/template/fonts/Gotham-Font/Gotham-Ultra.otf");
+  }
+  
+  @font-face {
+    font-family: "myriad-bold";
+    font-display: auto;
+    src: url("./components/template/fonts/Myriad/MYRIADPRO-BOLD.woff");
+  }
+  
+  @font-face {
+    font-family: "myriad-regular";
+    font-display: auto;
+    src: url("./components/template/fonts/Myriad/MYRIADPRO-REGULAR.woff");
+  }
+  
+  @font-face {
+    font-family: "myriad-semibold";
+    font-display: auto;
+    src: url("./components/template/fonts/Myriad/MYRIADPRO-SEMIBOLD.woff");
+  }
