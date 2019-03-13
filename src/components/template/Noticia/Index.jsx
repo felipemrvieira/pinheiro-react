@@ -39,7 +39,7 @@ class Noticias extends Component {
                                 <p className="intro">{this.state.materia.intro}</p>
                                 <p className="reporter">{this.state.materia.reporter}</p>
                                 <p className="data">
-                                    <Moment format="DD/MM/YYYY">
+                                    <Moment format="DD/MM/YYYY HH:MM">
                                         {this.state.materia.created_at}
                                     </Moment>
                                 </p>
