@@ -25,8 +25,19 @@
                 color: #7a7c81;
                 font-size: 12px;
                 line-height: 12px;
-                margin: 0;
+                margin: 0 0 8px 0;
                 text-transform: uppercase;
+
+                .data{
+                    font-family: "myriad-regular";
+                    color: #3a3a3a;
+                    font-size: 12px;
+                    margin: 0 6px 0 0;
+                    overflow: hidden;
+                    position: relative;
+                    float: right;
+                
+                }
                 
             }
             .noticia-titulo{
@@ -34,7 +45,7 @@
                 font-family: "myriad-regular";
 
                 font-size: 16px;
-                line-height: 20px;
+                line-height: 18px;
                 margin: 4px 0 0 0;
 
             }

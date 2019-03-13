@@ -28,7 +28,7 @@
                         color: #7a7c81;
                         font-size: 12px;
                         line-height: 12px;
-                        margin: 0;
+                        margin: 0 0 16px 0;
                         text-transform: uppercase;
                     }
                     .titulo{
@@ -40,7 +40,7 @@
                     .intro{
                         font-family: "myriad-regular";
                         color: #757679;
-                        font-size: 16px;
+                        font-size: 17px;
                         margin: 8px 0 0 0;
                         overflow: hidden;
                         position: relative;
@@ -48,6 +48,24 @@
                         max-height: 2.3em;
                         text-align: justify;
                         padding-right: 10px;
+                    }
+                    .reporter{
+                        font-family: "myriad-regular";
+                        color: #3a3a3a;
+                        font-size: 16px;
+                        margin: 24px 0 0 0;
+                        overflow: hidden;
+                        position: relative;
+                 
+                    }
+                    .data{
+                        font-family: "myriad-regular";
+                        color: #3a3a3a;
+                        font-size: 16px;
+                        margin: 0px 0 0 0;
+                        overflow: hidden;
+                        position: relative;
+                 
                     }
                 }
             }

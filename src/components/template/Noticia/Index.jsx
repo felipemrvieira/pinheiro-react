@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import Moment from 'react-moment';
 import './Noticia.scss';
 import Noticia from './Noticia';
 
@@ -25,7 +26,6 @@ class Noticias extends Component {
     }
 
     render() {
-        // console.log(this.state.materia.titulo)
 
         return (
             <section id="plano-contingencia" className="container">
@@ -37,6 +37,13 @@ class Noticias extends Component {
                                 <p className="chapeu">{this.state.materia.chapeu}</p>   
                                 <h3 className="titulo">{this.state.materia.titulo}</h3>
                                 <p className="intro">{this.state.materia.intro}</p>
+                                <p className="reporter">{this.state.materia.reporter}</p>
+                                <p className="data">
+                                    <Moment format="DD/MM/YYYY">
+                                        {this.state.materia.created_at}
+                                    </Moment>
+                                </p>
+
                             </div>
                             <div className="card-body">
                                 <div className="noticia-container">
