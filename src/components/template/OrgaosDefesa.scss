@@ -202,14 +202,14 @@
                 }
                
                 .orgao-competencias{
-                    margin-top: 8px;;
+                    margin-top: 8px;
+                    padding: 0 5px;
                     color: #8c8c8c;
-                    font-size: 16px;
+                    font-size: 14px;
                     text-align: justify;
-                    display: none;
                     .competencia-previa{
                         // display: inline;
-                        width: 200px;
+                        width: 100%;
                     }
                     .collapse{
                         // width: 200px;
@@ -332,11 +332,14 @@
                 }
                
                 .orgao-competencias{
-                    margin-top: 8px;;
+                    margin-top: 8px;
+                    padding: 0 5px;
                     color: #8c8c8c;
-                    font-size: 16px;
+                    font-size: 14px;
                     text-align: justify;
-                    display: none;
+                    display: flex;
+                    flex-direction: column;
+                   
                     span{
                     }
                     .collapse{
@@ -465,11 +468,14 @@
                 }
                
                 .orgao-competencias{
-                    margin-top: 8px;;
+                    margin-top: 8px;
+                    padding: 0 5px;
                     color: #8c8c8c;
-                    font-size: 16px;
+                    font-size: 13px;
                     text-align: justify;
-                    display: none;
+                    display: flex;
+                    flex-direction: column;
+                    
                     span{
                     }
                     .collapse{
