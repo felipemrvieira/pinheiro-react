@@ -15,7 +15,7 @@ export default props => {
                 <div className="noticia-info">
                     
                     <div className="noticia-chapeu">
-                        {item.chapeu} {item.id}
+                        {item.chapeu}
                         <p className="data">
                             <Moment format="DD/MM/YYYY">
                                 {item.created_at}
