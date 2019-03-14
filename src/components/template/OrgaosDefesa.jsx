@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './OrgaosDefesa.scss';
-import $ from 'jquery';
-
 
 class OrgaosDefesa extends Component {
   render() {

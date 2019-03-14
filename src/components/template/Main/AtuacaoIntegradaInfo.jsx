@@ -4,10 +4,7 @@ import { Markup } from 'interweave';
 
 
 export default class AtuacaoIntegrada extends Component {
-    constructor(props) {
-        super(props)
-    }
- 
+    
     render() {
         const renderRows = () => {
             const info = this.props.info || []

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './TelefonesUteis.scss';
-import $ from 'jquery';
-
 
 class TelefonesUteis extends Component {
   render() {

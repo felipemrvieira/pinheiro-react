@@ -18,7 +18,7 @@ export default props => {
                     </Link>
                 </div>
                 <div id="banner2" className="col-md-6">
-                    <a href="#">
+                    <a href="/">
                         <img src={aplicativo} alt="aplicativo" />
                     </a>
                 </div>
