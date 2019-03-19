@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router';
 import axios from 'axios';
 
 import Index from './components/Index';
+import TermosDeUso from './components/TermosDeUso';
 import PlanoContingencia from './components/PlanoContingencia';
 import DuvidasFrequentes from './components/DuvidasFrequentes';
 import Noticia from './components/Noticia';
@@ -31,6 +32,9 @@ export default class Routes extends Component {
         const ComponentePlanoContingencia = () => (
             <PlanoContingencia banner={img} />
         );
+        const ComponenteTermosDeUso = () => (
+            <TermosDeUso banner={img} />
+        );
         const ComponenteDuvidasFrequentes = () => (
             <DuvidasFrequentes banner={img} />
         );
@@ -41,6 +45,7 @@ export default class Routes extends Component {
         return(
             <Switch>
                 <Route exact path='/' component={Index} />
+                <Route path='/termos-de-uso' component={ComponenteTermosDeUso} />
                 <Route path='/plano-de-contingencia' component={ComponentePlanoContingencia} />
                 <Route path='/duvidas-frequentes' component={ComponenteDuvidasFrequentes} />
                 <Route path='/noticia/:id' component={ComponenteNoticia} />
