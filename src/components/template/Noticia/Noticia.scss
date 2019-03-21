@@ -22,6 +22,7 @@
                 .card-header{
                     text-align: left;
                     margin-top: 12px;
+                    padding-bottom: 4px;
                     .chapeu{
                         text-align: left;
                         font-family: "myriad-regular";
@@ -52,8 +53,10 @@
                     .reporter{
                         font-family: "myriad-regular";
                         color: #3a3a3a;
-                        font-size: 16px;
-                        margin: 24px 0 0 0;
+                        font-size: 14px;
+                        line-height: 15px;
+
+                        margin: 12px 0 0 0;
                         overflow: hidden;
                         position: relative;
                  
@@ -61,7 +64,8 @@
                     .data{
                         font-family: "myriad-regular";
                         color: #3a3a3a;
-                        font-size: 16px;
+                        font-size: 14px;
+                        line-height: 15px;
                         margin: 0px 0 0 0;
                         overflow: hidden;
                         position: relative;
@@ -75,9 +79,24 @@
                     .noticia{
                         display: flex;
                         flex-direction: column;
+                        padding: 0px 4px 20px 0;
                         .noticia-capa{
                             width: 100%;
-                            margin-bottom: 18px;
+                        }
+                        .noticia-autoriaImagem{
+                            padding: 0px;
+                            margin: 0 0 16px 0;
+                            background: #EDEDED;
+                            width: 100%;
+                            p{
+                                color: #999;
+                                float: right;
+                                display: block;
+                                font-style: italic;
+                                font-size: 12px;
+                                padding: 9px 18px;
+                                margin: 0;
+                            }
                         }
                         .noticia-texto{
                             width: 100%;
@@ -141,6 +160,27 @@
                         text-align: justify;
                         padding-right: 10px;
                     }
+                    .reporter{
+                        font-family: "myriad-regular";
+                        color: #3a3a3a;
+                        font-size: 14px;
+                        line-height: 15px;
+
+                        margin: 12px 0 0 0;
+                        overflow: hidden;
+                        position: relative;
+                 
+                    }
+                    .data{
+                        font-family: "myriad-regular";
+                        color: #3a3a3a;
+                        font-size: 14px;
+                        line-height: 15px;
+                        margin: 0px 0 0 0;
+                        overflow: hidden;
+                        position: relative;
+                 
+                    }
                 }
             }
             .card-body{
@@ -151,7 +191,21 @@
                         flex-direction: column;
                         .noticia-capa{
                             width: 100%;
-                            margin-bottom: 18px;
+                        }
+                        .noticia-autoriaImagem{
+                            padding: 0px;
+                            margin: 0 0 16px 0;
+                            background: #EDEDED;
+                            width: 100%;
+                            p{
+                                color: #999;
+                                float: right;
+                                display: block;
+                                font-style: italic;
+                                font-size: 12px;
+                                padding: 9px 18px;
+                                margin: 0;
+                            }
                         }
                         .noticia-texto{
                             width: 100%;
@@ -217,6 +271,27 @@
                         text-align: justify;
                         padding-right: 10px;
                     }
+                    .reporter{
+                        font-family: "myriad-regular";
+                        color: #3a3a3a;
+                        font-size: 14px;
+                        line-height: 15px;
+
+                        margin: 12px 0 0 0;
+                        overflow: hidden;
+                        position: relative;
+                 
+                    }
+                    .data{
+                        font-family: "myriad-regular";
+                        color: #3a3a3a;
+                        font-size: 14px;
+                        line-height: 15px;
+                        margin: 0px 0 0 0;
+                        overflow: hidden;
+                        position: relative;
+                 
+                    }
                 }
             }
             .card-body{
@@ -227,7 +302,21 @@
                         flex-direction: column;
                         .noticia-capa{
                             width: 100%;
-                            margin-bottom: 18px;
+                        }
+                        .noticia-autoriaImagem{
+                            padding: 0px;
+                            margin: 0 0 16px 0;
+                            background: #EDEDED;
+                            width: 100%;
+                            p{
+                                color: #999;
+                                float: right;
+                                display: block;
+                                font-style: italic;
+                                font-size: 12px;
+                                padding: 9px 18px;
+                                margin: 0;
+                            }
                         }
                         .noticia-texto{
                             width: 100%;

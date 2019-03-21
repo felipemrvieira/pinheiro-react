@@ -9,6 +9,11 @@ export default props => {
         <div>
             <div className="noticia">
                 <img className="noticia-capa" src={ materia.imagemCapa }  alt="destaque" />
+                <div className="noticia-autoriaImagem">
+                    <p>
+                        {materia.autoriaImagem}
+                    </p>
+                </div>
                 <div className="noticia-texto">
                     <Markup content={materia.texto} />
                 </div>
