@@ -85,6 +85,61 @@
                         width: 100%;
                         max-width: 100%;
                         overflow: hidden;
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                }
+                
+            }
+            #mapa-container{
+                img{
+                    max-width: 100%;
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+
+// Tela pequena
+@media only screen and (max-width: 600px) {
+    #plano-contingencia{
+        @include titulo-modulo();
+        h3{
+            text-align: center;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: -60px;
+
+        #cabecalho-modulo{
+            margin-bottom: 8px;
+        }
+
+        .submodulo{
+            border-radius: $card-radius;
+       
+        
+            .card-body{
+                margin: 0 12px;
+                .descricao-plano{
+                    
+                    .resposta{
+                        font-family: "myriad-regular";
+                        text-align: justify;
+                        color: #5e5e5e;
+                        font-size: 15px;
+                        width: 100%;
+                        max-width: 100%;
+                        overflow: hidden;
+                        img{
+                            max-width: 100%;
+                        }
                     }
                 }
                 
@@ -98,11 +153,5 @@
             }
         }
     }
-}
-
-
-// Tela pequena
-@media only screen and (max-width: 600px) {
-    
    
 }
