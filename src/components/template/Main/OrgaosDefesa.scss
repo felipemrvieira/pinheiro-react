@@ -76,6 +76,10 @@
                         width: 200px;
                         text-align: justify;
                         display: inline-block;
+                        text-decoration: none;
+                        color: #8c8c8c;
+                        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
                         &:hover{
                             cursor: pointer;
                         }
@@ -209,6 +213,10 @@
                     .competencia-previa{
                         // display: inline;
                         width: 200px;
+                        text-decoration: none;
+                        color: #8c8c8c;
+                        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
                     }
                     .collapse{
                         // width: 200px;

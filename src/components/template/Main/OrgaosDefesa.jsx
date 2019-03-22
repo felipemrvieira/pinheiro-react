@@ -23,8 +23,8 @@ class OrgaosDefesa extends Component {
                         </div>
                     </a>
                     <div className="orgao-competencias">
-                        <div className="competencia-previa" data-toggle="collapse" href="#collapseExample1" role="button"
-                        aria-expanded="false" aria-controls="collapseExample1">Desabamento, queda de árvore, feridos...</div>
+                        <a className="competencia-previa" data-toggle="collapse" href="#collapseExample1" role="button"
+                        aria-expanded="false" aria-controls="collapseExample1">Desabamento, queda de árvore, feridos...</a>
                     
                         <div className="collapse" id="collapseExample1">
                         <b>Disque 193</b> para ocorrências envolvendo desabamentos, quedas de árvores e
@@ -43,9 +43,9 @@ class OrgaosDefesa extends Component {
                         </div>
                     </a>
                     <div className="orgao-competencias">
-                        <div className="competencia-previa" data-toggle="collapse" href="#collapseExample2" role="button"
+                        <a className="competencia-previa" data-toggle="collapse" href="#collapseExample2" role="button"
                         aria-expanded="false" aria-controls="collapseExample2">Rachadura, afundamento, dúvida sobre os
-                        riscos...</div>
+                        riscos...</a>
                         <div className="collapse" id="collapseExample2">
                         Ligue para a Defesa Civil Municipal quando perceber o agravamento dos
                         fenômenos - rachaduras e/ou afundamentos - nas casas, apartamentos e/ou
@@ -62,8 +62,8 @@ class OrgaosDefesa extends Component {
                         </div>
                     </a>
                     <div className="orgao-competencias">
-                        <div className="competencia-previa" data-toggle="collapse" href="#collapseExample3" role="button"
-                        aria-expanded="false" aria-controls="collapseExample3">Falta de água, vazamento, rompimento...</div>
+                        <a className="competencia-previa" data-toggle="collapse" href="#collapseExample3" role="button"
+                        aria-expanded="false" aria-controls="collapseExample3">Falta de água, vazamento, rompimento...</a>
                         
                         <div className="collapse" id="collapseExample3">
                         Entre em contato com a Casal em casos de interrupção no abastecimento de

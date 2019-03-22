@@ -1,15 +1,21 @@
 import React from 'react'
 import './Noticia.scss';
 import Moment from 'react-moment';
+import moment from 'moment';
+
 
 export default props => {
     const renderRows = () => {
         const list = props.list || []
         
-        const ordenada = list
-        ordenada.sort((a,b) => new Date(b.created_at) - new Date(a.created_at));
+        let sorted = list.sort(function(a, b) {
+            b = moment(b.created_at);
+            a = moment(a.created_at);
+           
+            return a>b ? -1 : a<b ? 1 : 0;
+        });
               
-        return ordenada.map(item => (
+        return sorted.map(item => (
             <a href={"#/noticia/"+ item.id } className="noticia" key={item.id}>
                 <img className="noticia-destaque" src={ item.imagemCapa }  alt="destaque" />
                 <div className="noticia-info">
