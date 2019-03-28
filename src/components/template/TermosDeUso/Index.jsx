@@ -7,7 +7,7 @@ import { Markup } from 'interweave';
 export default props => {
    
     return (
-        <section id="plano-contingencia" className="container">
+        <section id="termos-de-uso" className="container">
         <div className="row">
   
           <div id="cabecalho-modulo" className="col-md-12">

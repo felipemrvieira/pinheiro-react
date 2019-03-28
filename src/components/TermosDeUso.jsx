@@ -26,8 +26,7 @@ class TermosDeUso extends Component {
   render() {
     return (
       <div>
-        <BannerPrincipal banner={this.props.banner} />
-        <OrgaosDefesa />
+        {/* <BannerPrincipal banner={this.props.banner} /> */}
         <Termo plano={this.state.plano} />  
       </div>
     );
