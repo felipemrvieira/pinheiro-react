@@ -1,18 +1,38 @@
 import React, { Component } from 'react';
 import './MapaInstabilidade.scss';
+import axios from 'axios';
+import { Markup } from 'interweave';
+
+
+const URL = 'http://api.itec.al.gov.br/api/v1/mapa'
 
 class MapaInstabilidade extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { info: [] }
+    this.refresh()
+  }
+
+  refresh() {
+    axios.get(`${URL}`)
+    .then(resp => {
+    this.setState({ ...this.state, info: resp.data[0] })
+    })
+    .catch( err => console.log(err) )
+  }
+
   render() {
     return (
         <div className="card" id="card-mapa">
             <div className="card-header">
-              <h3 className="titulo-modulo">Mapa de Evacuação</h3>
-              <p className="descricao-modulo">Veja abaixo os pontos de encontro em caso de evacuação do bairro</p>
+              <h3 className="titulo-modulo">{this.state.info.titulo}</h3>
+              <p className="descricao-modulo">
+                <Markup content={this.state.info.texto} />
+              </p>
             </div>
             <div className="card-body">
               <div id="mapa">
-                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1YdIOOoJT1XqqFzeWHA8hOTI0EauJb4tv" width="100%"
-                  title="Mapa de instabilidade"></iframe>
+                <iframe src={this.state.info.link} width="100%" title="Mapa de instabilidade"></iframe>
               </div>
             </div>
             <div className="card-footer text-muted">
