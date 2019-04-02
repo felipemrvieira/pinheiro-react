@@ -6,8 +6,8 @@ class MapaInstabilidade extends Component {
     return (
         <div className="card" id="card-mapa">
             <div className="card-header">
-              <h3 className="titulo-modulo">Mapa</h3>
-              <p className="descricao-modulo">Confira aqui os pontos de apoio!</p>
+              <h3 className="titulo-modulo">Mapa de Evacuação</h3>
+              <p className="descricao-modulo">Veja abaixo os pontos de encontro em caso de evacuação do bairro</p>
             </div>
             <div className="card-body">
               <div id="mapa">

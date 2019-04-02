@@ -1,50 +1,56 @@
-import React from 'react'
+import React, { Component } from 'react';
 import './AreasAtingidas.scss';
+import axios from 'axios';
+import { Markup } from 'interweave';
 
 
-export default props => {
+const URL = 'http://api.itec.al.gov.br/api/v1/areas'
+
+class AreasAtingidas extends Component {
+    constructor(props) {
+        super(props)
+        this.state = { info: [] }
+        this.refresh()
+    }
+
+    refresh() {
+        axios.get(`${URL}`)
+        .then(resp => {
+        this.setState({ ...this.state, info: resp.data[0] })
+        })
+        .catch( err => console.log(err) )
+    }
     
-    return (
-        <section id="areas-afetadas" className="container">
-            <div className="row">
-                <div className="col-md-12">
-                    <div className="card">
-                        <a className="card-header" 
-                        data-toggle="collapse" 
-                        href="#collapseArea" 
-                        role="button" 
-                        aria-expanded="false"
-                        aria-controls="collapseArea">
-                        <h3 className="titulo-modulo">
-                            Está em uma das áreas atingidas?
-                        </h3>
-                        </a>
-                        <div className="card-body collapse" id="collapseArea">
-                            <div className="">
+    render(){
+        return (
+            <section id="areas-afetadas" className="container">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="card">
+                            <a className="card-header" 
+                            data-toggle="collapse" 
+                            href="#collapseArea" 
+                            role="button" 
+                            aria-expanded="false"
+                            aria-controls="collapseArea">
+                            <h3 className="titulo-modulo">
+                                {this.state.info.titulo}
+                            </h3>
+                            </a>
+                            <div className="card-body collapse" id="collapseArea">
                                 <div className="">
-                                    <p>
-                                        A área vermelha corresponde aos locais com maior intensidade de deformação.
-                                        Ou seja, com maior concentração de trincas/rachaduras em imóveis ou vias
-                                        públicas ou onde ocorrem trincas/rachaduras com maiores aberturas, indicando
-                                        que o processo de deformação do solo é mais intenso nesta área.
-                                    </p>
-                                    <p>
-                                        As áreas laranja e amarela correspondem aos locais onde esse processo foi
-                                        identificado como de intensidade alta e média.
-                                    </p>
-                                    <p>
-                                        A orientação é que, diante do surgimento de novas fissuras ou agravamento das
-                                        existentes, o cidadão deve acionar a Defesa Civil Municipal (0800 030 6205) para avaliação do
-                                        imóvel. Você também deve ligar sempre que tiver dúvida quanto à necessidade de
-                                        sair da edificação.
-                                    </p>
+                                    <div className="">
+                                        <Markup content={this.state.info.texto} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-    );
+            </section>
+            
+        );
+    }
 }
+
+export default AreasAtingidas;
