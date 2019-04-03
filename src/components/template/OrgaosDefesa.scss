@@ -1,5 +1,57 @@
 @import "./variaveis";
 
+$vermelho: #a90000;
+$verde: #4fce5d;
+$laranja: #ff5d00;
+
+.prefeitura{
+    .orgao-info{
+        border-top: 6px solid $verde;
+        .orgao-telefone{
+            color: $verde;
+            &:before {
+                content: "";
+                display: block;
+                background: url("./images/whatsapp-logo.png") no-repeat;
+                background-position: center;
+                background-size: 100% auto;
+
+                width: 28px;
+                height: 28px;
+                float: left;
+                margin-right: -15px;
+            }
+        }
+        .orgao-titulo{
+            color: $verde;
+        }
+    }
+}
+
+.bombeiros{
+    .orgao-info{
+        border-top: 6px solid $vermelho;
+        .orgao-telefone{
+            color: $vermelho;
+        }
+        .orgao-titulo{
+            color: $vermelho;
+        }
+    }
+}
+
+.defesa{
+    .orgao-info{
+        border-top: 6px solid $laranja;
+        .orgao-telefone{
+            color: $laranja;
+        }
+        .orgao-titulo{
+            color: $laranja;
+        }
+    }
+}
+
 // Tela grande
 @media only screen and (min-width: 900px) {
     #orgaos-defesa{
@@ -47,19 +99,21 @@
             .orgao-defesa{
                 a{
                     text-decoration: none;
+                    font-family: inherit;
                 }
                 .orgao-info{
                     font-family: "gothan-ultra";
                     background-color: white;
                     padding: 18px 24px;
                     width: 200px;
+                    // height: 150px;
                     border-radius: 22px;
                     text-align: center;
                     -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
                     -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
                     box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
                     transition: 0.3s;
-                    border-top: 6px solid #a90000;
+                    
                     &:hover{
                         cursor: pointer;
                         -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
@@ -76,6 +130,10 @@
                         width: 200px;
                         text-align: justify;
                         display: inline-block;
+                        text-decoration: none;
+                        color: #8c8c8c;
+                        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
                         &:hover{
                             cursor: pointer;
                         }
@@ -113,14 +171,14 @@
                 .orgao-telefone{
                     font-size: 30px;
                     line-height: 30px;
-                    color: #a90000;
+                    
                 }
                 .orgao-titulo{
                     text-transform: uppercase;
                     font-size: 18px;
                     line-height: 18px;
                     margin-top:10px;
-                    color: #a90000;
+                   
                 }
             }
         }
@@ -192,7 +250,6 @@
                     -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
                     box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
                     transition: 0.3s;
-                    border-top: 6px solid #a90000;
                     &:hover{
                         cursor: pointer;
                         -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
@@ -202,14 +259,17 @@
                 }
                
                 .orgao-competencias{
-                    margin-top: 8px;
-                    padding: 0 5px;
+                    margin-top: 8px;;
                     color: #8c8c8c;
-                    font-size: 14px;
+                    font-size: 16px;
                     text-align: justify;
                     .competencia-previa{
                         // display: inline;
-                        width: 100%;
+                        width: 200px;
+                        text-decoration: none;
+                        color: #8c8c8c;
+                        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
                     }
                     .collapse{
                         // width: 200px;
@@ -242,14 +302,13 @@
                 .orgao-telefone{
                     font-size: 22px;
                     line-height: 20px;
-                    color: #a90000;
                 }
                 .orgao-titulo{
                     text-transform: uppercase;
                     font-size: 14px;
                     line-height: 14px;
                     margin-top: 10px;
-                    color: #a90000;
+                 
                 }
             }
         }
@@ -322,7 +381,7 @@
                     -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
                     box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
                     transition: 0.3s;
-                    border-top: 6px solid #a90000;
+                  
                     &:hover{
                         cursor: pointer;
                         -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
@@ -333,13 +392,9 @@
                
                 .orgao-competencias{
                     margin-top: 8px;
-                    padding: 0 5px;
                     color: #8c8c8c;
-                    font-size: 14px;
+                    font-size: 16px;
                     text-align: justify;
-                    display: flex;
-                    flex-direction: column;
-                   
                     span{
                     }
                     .collapse{
@@ -373,14 +428,14 @@
                 .orgao-telefone{
                     font-size: 22px;
                     line-height: 20px;
-                    color: #a90000;
+                
                 }
                 .orgao-titulo{
                     text-transform: uppercase;
                     font-size: 14px;
                     line-height: 14px;
                     margin-top: 10px;
-                    color: #a90000;
+                
                 }
             }
         }
@@ -458,7 +513,7 @@
                     -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
                     box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
                     transition: 0.3s;
-                    border-top: 6px solid #a90000;
+
                     &:hover{
                         cursor: pointer;
                         -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
@@ -468,14 +523,10 @@
                 }
                
                 .orgao-competencias{
-                    margin-top: 8px;
-                    padding: 0 5px;
+                    margin-top: 8px;;
                     color: #8c8c8c;
-                    font-size: 13px;
+                    font-size: 16px;
                     text-align: justify;
-                    display: flex;
-                    flex-direction: column;
-                    
                     span{
                     }
                     .collapse{
@@ -509,14 +560,14 @@
                 .orgao-telefone{
                     font-size: 22px;
                     line-height: 20px;
-                    color: #a90000;
+            
                 }
                 .orgao-titulo{
                     text-transform: uppercase;
                     font-size: 10px;
                     line-height: 10px;
                     margin-top: 10px;
-                    color: #a90000;
+            
                 }
             }
         }

@@ -26,16 +26,18 @@ class OrgaosDefesa extends Component {
         const orgaos = this.state.orgaos || []
               
         return orgaos.map(orgao => (
-            <div className="orgao-defesa" key={orgao.id}>
+            <div className="orgao-defesa bombeiros" key={orgao.id}>
                 <a href={"tel:" + orgao.numero}>
                     <div className="orgao-info">
-                    <div className="orgao-telefone">{orgao.numero}</div>
-                    <div className="orgao-titulo">{orgao.nome}</div>
+                        <div className="orgao-telefone">{orgao.numero}</div>
+                        <div className="orgao-titulo">{orgao.nome}</div>
                     </div>
                 </a>
                 <div className="orgao-competencias">
                     <a className="competencia-previa" data-toggle="collapse" href={"#collapseExample" +orgao.id} role="button"
-                    aria-expanded="false" aria-controls={"collapseExample" +orgao.id}>{orgao.intro || "Listar competências"}</a>
+                    aria-expanded="false" aria-controls={"collapseExample" +orgao.id}>
+                        <Markup content={orgao.intro || "Informações"} />
+                    </a>
                 
                     <div className="collapse" id={"collapseExample" +orgao.id}>
                         <Markup content={orgao.competencias} />

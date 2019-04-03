@@ -24,6 +24,7 @@ class TelefonesUteis extends Component {
                                     <li>DEFESA CIVIL ESTADUAL (3315-2843) - Atua em situações de emergência, após ser acionada pelo
                                     município.
                                     </li>
+                                    <li>CASAL (0800 082 0195) - Interrupção no abastecimento de água, vazamentos e rompimentos de canos e tubulações.</li>
                                 </ul>
                             </div>
                         </div>
