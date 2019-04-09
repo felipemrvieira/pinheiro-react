@@ -15,17 +15,19 @@ class DuvidasFrequentes extends Component {
   }
 
   refresh() {
-  axios.get(`${URL}`)
-      .then(resp => {
+    axios.get(`${URL}`)
+    .then(resp => {
       this.setState({ ...this.state, duvidas: resp.data })
-      })
-      .catch( err => console.log(err) )
+    })
+    .catch( err => console.log(err) )
   }
 
   render() {
+    
     return (
       <div>
-        <BannerPrincipal banner={this.props.banner} />
+        <BannerPrincipal banner={this.props.banner} link={this.props.link}/>
+
         <OrgaosDefesa />
         <Duvidas duvidas={this.state.duvidas} />  
       </div>

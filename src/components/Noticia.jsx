@@ -9,7 +9,7 @@ class CompNoticia extends Component {
   render() {
     return (
       <div>
-        <BannerPrincipal banner={this.props.banner} />
+        <BannerPrincipal banner={this.props.banner} link={this.props.link}/>
         <OrgaosDefesa />
         <Noticia id={this.props.id} />  
       </div>

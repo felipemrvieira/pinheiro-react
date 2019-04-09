@@ -15,6 +15,12 @@
 
         #cabecalho-modulo{
             margin-bottom: 8px;
+            .card{
+                padding: 0;
+                .card-header{
+                    margin: 0 ;
+                }
+            }
         }
 
         .submodulo{

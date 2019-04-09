@@ -13,9 +13,9 @@ export default props => {
                     <Markup content={item.pergunta} />
                 </a>
                 <div className="resposta collapse" id={"pergunta"+item.id}>
-                <p>
-                    <Markup content={item.resposta} />
-                </p>
+                    <div>
+                        <Markup content={item.resposta} />
+                    </div>
                 </div>
                 <hr />
         </div>

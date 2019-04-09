@@ -2,7 +2,7 @@
 
 // Tela grande
 @media only screen and (min-width: 901px) {
-    #plano-contingencia{
+    #noticia{
         @include titulo-modulo();
         h3{
             text-align: center;
@@ -118,7 +118,7 @@
 
 // Tela media
 @media only screen and (max-width: 900px) {
-    #plano-contingencia{
+    #noticia{
         @include titulo-modulo();
         h3{
             text-align: center;

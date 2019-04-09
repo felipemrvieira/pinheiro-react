@@ -8,7 +8,7 @@ class TelefonesUteis extends Component {
             <div className="row">
                 <div className="col-lg-12">
                     <div className="card" id="" >
-                    <a href="" data-toggle="collapse" href="#corpo-card-telefones" role="button"
+                    <a  data-toggle="collapse" href="#corpo-card-telefones" role="button"
                         aria-expanded="false" aria-controls="corpo-card-telefones">
                         <div className="card-header">
                             <p className="titulo-componente">+ Telefones Úteis</p>

@@ -28,7 +28,7 @@ class Noticias extends Component {
     render() {
 
         return (
-            <section id="plano-contingencia" className="container">
+            <section id="noticia" className="container">
                 <div className="row">
                     <div id="cabecalho-modulo" className="col-md-12">
       

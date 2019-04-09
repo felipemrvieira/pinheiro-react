@@ -15,33 +15,37 @@ const URL = 'http://api.itec.al.gov.br/api/v1/banners';
 export default class Routes extends Component {
     constructor(props) {
         super(props)
-        this.state = { banner: {} }
+        this.state = { banner: {}, link: {} }
         this.refresh()
     }
 
     refresh() {
         axios.get(`${URL}`)
             .then(resp => {
-                this.setState({ ...this.state, banner: resp.data[0] })
+                this.setState({ ...this.state, 
+                    banner: resp.data[0].imagem,
+                    link: resp.data[0].link, 
+                })
             })
             .catch( err => console.log(err) )
         }
         
         render() {
-        const img = this.state.banner.imagem;
+        const img = this.state.banner;
+        const link = this.state.link;
         
         const ComponentePlanoContingencia = () => (
-            <PlanoContingencia banner={img} />
+            <PlanoContingencia banner={img} link={link} />
         );
         const ComponenteTermosDeUso = () => (
-            <TermosDeUso banner={img} />
+            <TermosDeUso banner={img} link={link} />
         );
 
         const ComponenteDuvidasFrequentes = () => (
-            <DuvidasFrequentes banner={img} />
+            <DuvidasFrequentes banner={img} link={link} />
         );
         const ComponenteNoticia = ({ match }) => (
-            <Noticia id={match.params.id} banner={img} />
+            <Noticia id={match.params.id} banner={img} link={link} />
         );
 
         return(

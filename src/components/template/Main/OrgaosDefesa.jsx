@@ -23,7 +23,7 @@ class OrgaosDefesa extends Component {
     }
 
     showPhone(numero, classe){
-        if(classe == "prefeitura"){
+        if(classe === "prefeitura"){
             // Remove espaço
             numero = numero.replace(/ /g,'')
             return "http://api.whatsapp.com/send?1=pt_BR&phone=5582" + numero

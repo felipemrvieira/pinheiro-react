@@ -26,9 +26,9 @@ class MapaInstabilidade extends Component {
         <div className="card" id="card-mapa">
             <div className="card-header">
               <h3 className="titulo-modulo">{this.state.info.titulo}</h3>
-              <p className="descricao-modulo">
+              <div className="descricao-modulo">
                 <Markup content={this.state.info.texto} />
-              </p>
+              </div>
             </div>
             <div className="card-body">
               <div id="mapa">

@@ -15,18 +15,17 @@ class PlanoContingencia extends Component {
   }
 
   refresh() {
-  axios.get(`${URL}`)
-      .then(resp => {
+    axios.get(`${URL}`)
+    .then(resp => {
       this.setState({ ...this.state, plano: resp.data[0] })
-      // console.log(this.state.plano)
-      })
-      .catch( err => console.log(err) )
+    })
+    .catch( err => console.log(err) )
   }
 
   render() {
     return (
       <div>
-        <BannerPrincipal banner={this.props.banner} />
+        <BannerPrincipal banner={this.props.banner} link={this.props.link}/>
         <OrgaosDefesa />
         <Plano plano={this.state.plano} />  
       </div>

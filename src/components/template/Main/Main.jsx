@@ -17,22 +17,27 @@ const URL = 'http://api.itec.al.gov.br/api/v1/banners';
 class Main extends Component {
   constructor(props) {
     super(props)
-    this.state = { banner: {} }
+    this.state = { banner: {}, link:{} }
     this.refresh()
   }
+  
   refresh() {
     axios.get(`${URL}`)
-        .then(resp => {
-          this.setState({ ...this.state, banner: resp.data[0] })
-        })
-        .catch( err => console.log(err) )
-      }
+    .then(resp => {
+      this.setState({ ...this.state, 
+        banner: resp.data[0].imagem, 
+        link: resp.data[0].link,
+      })
+    })
+    .catch( err => console.log(err) )
+  }
       
     render() {
-      const img = this.state.banner.imagem;
+      const img = this.state.banner;
+      const link = this.state.link;
       return (
           <main>
-              <BannerPrincipal banner={img}/>
+              <BannerPrincipal banner={img} link={link}/>
               <OrgaosDefesa />
               <TelefonesUteis />
               <BannerContingencia/>
