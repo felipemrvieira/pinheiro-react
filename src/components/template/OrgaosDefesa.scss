@@ -1,25 +1,27 @@
 @import "./variaveis";
 
 $vermelho: #a90000;
-$verde: #4fce5d;
-$laranja: #ff5d00;
+$verde: #4FCE5D;
+$laranja: #ff5c00;
 
 .prefeitura{
     .orgao-info{
         border-top: 6px solid $verde;
         .orgao-telefone{
             color: $verde;
-            &:before {
-                content: "";
-                display: block;
-                background: url("./images/whatsapp-logo.png") no-repeat;
+            &:before{
+                content: " ";
+                background-image: url(./images/whatsapp-logo.png);
+                background-repeat: no-repeat;
+                background-size: cover; 
                 background-position: center;
-                background-size: 100% auto;
+                width: 100%;
 
-                width: 28px;
-                height: 28px;
                 float: left;
-                margin-right: -15px;
+                width: 40px;
+                height: 40px;
+                margin: 0 5px 0 0;
+                background-size: 100%;
             }
         }
         .orgao-titulo{

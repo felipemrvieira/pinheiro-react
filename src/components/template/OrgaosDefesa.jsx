@@ -22,12 +22,25 @@ class OrgaosDefesa extends Component {
         .catch( err => console.log(err) )
     }
 
+    showPhone(numero, classe){
+        if(classe == "prefeitura"){
+            // Remove espaço
+            numero = numero.replace(/ /g,'')
+            return "http://api.whatsapp.com/send?1=pt_BR&phone=5582" + numero
+        }
+        else{
+            return "tel:" + numero
+        }
+
+    }
+
+
     renderButtons() {
         const orgaos = this.state.orgaos || []
               
         return orgaos.map(orgao => (
-            <div className="orgao-defesa defesa" key={orgao.id}>
-                <a href={"tel:" + orgao.numero}>
+            <div className={"orgao-defesa " + orgao.classe} key={orgao.id}>
+                <a href={this.showPhone(orgao.numero, orgao.classe)}>
                     <div className="orgao-info">
                         <div className="orgao-telefone">{orgao.numero}</div>
                         <div className="orgao-titulo">{orgao.nome}</div>

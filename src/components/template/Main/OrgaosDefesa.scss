@@ -9,6 +9,21 @@ $laranja: #ff5c00;
         border-top: 6px solid $verde;
         .orgao-telefone{
             color: $verde;
+            &:before{
+                content: " ";
+                background-image: url(./../images/whatsapp-logo.png);
+                background-repeat: no-repeat;
+                background-size: cover; 
+                background-position: center;
+                width: 100%;
+
+                float: left;
+                width: 40px;
+                height: 40px;
+                margin: 0 5px 0 0;
+                background-size: 100%;
+            }
+
         }
         .orgao-titulo{
             color: $verde;

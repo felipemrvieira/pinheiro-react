@@ -51,11 +51,12 @@ class Noticias extends Component {
                                 </div>
                             </div>
                             <div className="card-footer text-muted">
-                                <a href="http://www.maceio.al.gov.br/" target="_blank" rel="noopener noreferrer">Confira aqui as notícias da
-                                    prefeitura</a>
+                                <a href="http://www.maceio.al.gov.br/" target="_blank" rel="noopener noreferrer">
+                                    Confira aqui as notícias da Prefeitura de Maceió
+                                </a>
                                 <br/>
-                                <a href="http://www.cprm.gov.br/publique/Gestao-Territorial/Prevencao-de-Desastres-Naturais/Acao-Emergencial-no-Bairro-Pinheiro-%28Maceio%2C-AL%29-5344.html"
-                                    target="_blank" rel="noopener noreferrer">Confira aqui as notícias da CPRM</a>
+                                {/* <a href="http://www.cprm.gov.br/publique/Gestao-Territorial/Prevencao-de-Desastres-Naturais/Acao-Emergencial-no-Bairro-Pinheiro-%28Maceio%2C-AL%29-5344.html"
+                                    target="_blank" rel="noopener noreferrer">Confira aqui as notícias da CPRM</a> */}
                             </div>
                         </div>
                     </div>
