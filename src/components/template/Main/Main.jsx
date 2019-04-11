@@ -10,6 +10,7 @@ import BannersDiversos from './BannersDiversos';
 import AtuacaoIntegrada from './AtuacaoIntegrada';
 import BannerPrincipal from './BannerPrincipal';
 import OrgaosDefesa from './OrgaosDefesa';
+import BannerPrefeitura from './BannerPrefeitura';
 
 const URL = 'http://api.itec.al.gov.br/api/v1/banners';
 
@@ -51,6 +52,7 @@ class Main extends Component {
                   </div>
                 </div>
               </section>
+              <BannerPrefeitura />
               <AreasAtingidas />
               <BannersDiversos />
               <AtuacaoIntegrada />

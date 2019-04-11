@@ -10,7 +10,7 @@ class BannerPrincipal extends Component {
       <a href={link}>
 
         <section id="banner-principal" style={bannerStyle} >
-            <div className="row csontainer">
+            <div className="row container">
                 <div className="col-lg-12">
                 </div>
             </div>

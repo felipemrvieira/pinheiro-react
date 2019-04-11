@@ -1,0 +1,35 @@
+@import "./variaveis";
+
+@media only screen and (min-width: 601px) {
+
+    #banner-prefeitura{
+        // width: 100%;
+        // max-width: 100%;
+        @include magin-top-bottom(20px, 20px);
+        @include posicao-relativa(0px);
+
+        img{
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #banner-prefeitura{
+        width: 100%;
+        max-width: 100%;
+        @include magin-top-bottom(10px, 16px);
+        position: relative;
+        top: -80px; 
+
+        img{
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+    }
+}
