@@ -45,7 +45,7 @@ export default class Routes extends Component {
             <DuvidasFrequentes banner={img} link={link} />
         );
         const ComponenteNoticia = ({ match }) => (
-            <Noticia id={match.params.id} banner={img} link={link} />
+            <Noticia slug={match.params.slug} banner={img} link={link} />
         );
 
         return(
@@ -54,7 +54,7 @@ export default class Routes extends Component {
                 <Route path='/termos-de-uso' component={ComponenteTermosDeUso} />
                 <Route path='/plano-de-contingencia' component={ComponentePlanoContingencia} />
                 <Route path='/duvidas-frequentes' component={ComponenteDuvidasFrequentes} />
-                <Route path='/noticia/:id' component={ComponenteNoticia} />
+                <Route path='/noticia/:slug' component={ComponenteNoticia} />
                 <Redirect from='*' to='/' />
             </Switch>
         )

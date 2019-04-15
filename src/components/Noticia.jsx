@@ -11,7 +11,7 @@ class CompNoticia extends Component {
       <div>
         <BannerPrincipal banner={this.props.banner} link={this.props.link}/>
         <OrgaosDefesa />
-        <Noticia id={this.props.id} />  
+        <Noticia slug={this.props.slug} />  
       </div>
     );
   }

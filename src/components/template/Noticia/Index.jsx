@@ -4,7 +4,7 @@ import Moment from 'react-moment';
 import './Noticia.scss';
 import Noticia from './Noticia';
 
-const URL = 'http://api.itec.al.gov.br/api/v1/noticias'
+const URL = 'http://api.itec.al.gov.br/api/v1/noticia'
 
 class Noticias extends Component {
     
@@ -17,7 +17,7 @@ class Noticias extends Component {
     
     
     refresh() {
-        axios.get(`${URL}/${this.props.id}`)
+        axios.get(`${URL}/${this.props.slug}`)
             .then(resp => {
                 this.setState({ ...this.state, materia: resp.data })
 

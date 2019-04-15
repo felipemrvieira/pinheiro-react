@@ -16,7 +16,7 @@ export default props => {
         });
               
         return sorted.map(item => (
-            <a href={"#/noticia/"+ item.id } className="noticia" key={item.id}>
+            <a href={"#/noticia/"+ item.slug } className="noticia" key={item.id}>
                 <img className="noticia-destaque" src={ item.imagemCapa }  alt="destaque" />
                 <div className="noticia-info">
                     
